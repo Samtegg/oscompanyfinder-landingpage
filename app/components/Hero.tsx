@@ -42,7 +42,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-[#888888] text-base leading-[1.75] mb-8 max-w-[420px]">
-              OsCompanyFinder gives you verified company data, decision-maker contacts, and
+              OsCompanyFinder gives you verified sales lead (company data), decision-maker contacts, and
               automated outreach — all in one platform built for Africa.
             </p>
 
