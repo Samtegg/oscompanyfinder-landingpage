@@ -32,8 +32,7 @@ export default function FinalCTA() {
         </div>
 
         <p className="mt-8 text-white/40 text-sm">
-          &ldquo;We set this up for your company in 48 hours. It&apos;s ₦1.5M setup and ₦500k
-          yearly maintenance.&rdquo;
+          &ldquo;We set this up for your company in 48 hours.
         </p>
       </div>
     </section>

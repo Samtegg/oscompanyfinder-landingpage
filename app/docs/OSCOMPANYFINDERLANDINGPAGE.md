@@ -76,7 +76,7 @@ css
 
 1. 🎯 LANDING PAGE OBJECTIVE
 The landing page has ONE job:
-Convert Nigerian companies into ₦1.5M + annual SaaS clients
+
 Not:
 explain tech
 show architecture
@@ -263,7 +263,7 @@ demo video
 4. Urgency
 “setup in 48 hours”
 5. ROI framing
-₦1.5M becomes small compared to revenue gained
+
 
 17. ⚠️ COMMON MISTAKES TO AVOID
 ❌ over-explaining scraping
@@ -391,7 +391,7 @@ Contacted (yellow)
 Converted (green)
 Failed (red)
 
-🧠 2. SALES SCRIPT + DEMO WALKTHROUGH (₦1.5M CLOSING)
+
 
 🎯 GOAL OF DEMO
 Not to explain tech.
@@ -438,7 +438,7 @@ STEP 6 — EXPORT
 “Or export everything to Excel instantly.”
 
 💰 2.4 CLOSE SCRIPT
-“We set this up for your company in 48 hours. It’s ₦1.5M setup and ₦500k yearly maintenance.”
+“We set this up for your company in 48 hours. 
 Pause.
 Then:
 “Do you want us to activate it for your sales or marketing team first?”
@@ -540,7 +540,7 @@ Demo Request
   ↓
 Sales Call
   ↓
-₦1.5M Close
+
 
 🧠 FINAL STRATEGIC TRUTH
 Your business is NOT:
@@ -656,7 +656,7 @@ Automation comes after sales validation.
 
 💰 4.1 REVENUE STRUCTURE
 Base pricing:
-₦1.5M setup
+
 ₦500k yearly maintenance
 
 📈 4.2 GROWTH MODEL
@@ -675,7 +675,7 @@ Cost per client:
 API usage
 email sending
 hosting
-≈ low compared to ₦1.5M revenue
+
 
 🚀 4.4 SCALING STRATEGY
 Phase 1:

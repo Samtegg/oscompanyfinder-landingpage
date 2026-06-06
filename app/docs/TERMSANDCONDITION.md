@@ -196,7 +196,7 @@ Example principle:
 Use of the platform does not guarantee business outcomes.
 
 This prevents claims such as:
-"I paid ₦1.5M and didn't get customers."
+
 
 6.8 INTELLECTUAL PROPERTY (IP) PROTECTION
 Your software itself is valuable.
