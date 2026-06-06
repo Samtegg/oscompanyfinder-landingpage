@@ -66,6 +66,13 @@ export const SEODATA: Record<string, SEOConfig> = {
     keywords: ["contact OsCompanyFinder", "book demo Nigeria", "B2B sales consultation"],
     url: `${SITE_URL}/#contact-form`,
   },
+  faq: {
+    title: `Frequently Asked Questions | ${SITE_NAME}`,
+    description:
+      "Got questions about OsCompanyFinder Technologies? Find answers about our B2B lead generation platform, data quality, pricing, features, and compliance.",
+    keywords: ["OsCompanyFinder FAQ", "B2B leads Nigeria questions", "lead generation platform help", "company finder Nigeria FAQ"],
+    url: `${SITE_URL}/faq`,
+  },
 };
 
 export function constructMetadata(pageKey: keyof typeof SEODATA = "default"): Metadata {
