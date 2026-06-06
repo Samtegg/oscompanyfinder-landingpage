@@ -74,7 +74,11 @@ const FEATURES = [
   },
 ];
 
-export default function Features() {
+import Link from "next/link";
+
+export default function Features({ preview = false }: { preview?: boolean }) {
+  const items = preview ? FEATURES.slice(0, 4) : FEATURES;
+
   return (
     <section id="features" className="py-20 bg-gradient-to-b from-[#F8FAFC] to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -88,7 +92,7 @@ export default function Features() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {FEATURES.map((feature) => (
+          {items.map((feature) => (
             <div
               key={feature.title}
               className="bg-white border border-[#E5E7EB] rounded-xl p-6 hover:shadow-md hover:border-[#006285]/30 transition-all group"
@@ -101,6 +105,17 @@ export default function Features() {
             </div>
           ))}
         </div>
+
+        {preview && (
+          <div className="mt-10 text-center">
+            <Link
+              href="/features"
+              className="inline-flex items-center gap-2 border-2 border-[#006285] text-[#006285] font-semibold px-6 py-3 rounded-xl hover:bg-[#006285] hover:text-white transition-all text-sm"
+            >
+              See all {FEATURES.length} features →
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -24,9 +24,10 @@ export default function Footer() {
             <div>
               <p className="text-white/60 font-semibold mb-3">Product</p>
               <ul className="space-y-2">
-                <li><a href="#features" className="text-white/40 hover:text-white/70 transition-colors">Features</a></li>
-                <li><a href="#pricing" className="text-white/40 hover:text-white/70 transition-colors">Pricing</a></li>
-                <li><a href="#demo" className="text-white/40 hover:text-white/70 transition-colors">Demo</a></li>
+                <li><Link href="/features" className="text-white/40 hover:text-white/70 transition-colors">Features</Link></li>
+                <li><Link href="/pricing" className="text-white/40 hover:text-white/70 transition-colors">Pricing</Link></li>
+                <li><Link href="/faq" className="text-white/40 hover:text-white/70 transition-colors">FAQ</Link></li>
+                <li><a href="/#demo" className="text-white/40 hover:text-white/70 transition-colors">Demo</a></li>
               </ul>
             </div>
             <div>

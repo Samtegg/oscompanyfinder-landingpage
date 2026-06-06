@@ -66,6 +66,20 @@ export const SEODATA: Record<string, SEOConfig> = {
     keywords: ["contact OsCompanyFinder", "book demo Nigeria", "B2B sales consultation"],
     url: `${SITE_URL}/#contact-form`,
   },
+  features: {
+    title: `Platform Features | ${SITE_NAME}`,
+    description:
+      "Explore every feature of OsCompanyFinder Technologies — company discovery, verified contact extraction, bulk email, saved templates, Excel export, and more.",
+    keywords: ["OsCompanyFinder features", "B2B lead generation features Nigeria", "bulk email Nigeria", "company finder features"],
+    url: `${SITE_URL}/features`,
+  },
+  pricingPage: {
+    title: `Pricing | ${SITE_NAME}`,
+    description:
+      "OsCompanyFinder Technologies offers flexible, negotiated pricing tailored to your business size, industry, and lead volume needs. Get a custom quote today.",
+    keywords: ["OsCompanyFinder pricing", "B2B lead generation cost Nigeria", "lead generation pricing Nigeria"],
+    url: `${SITE_URL}/pricing`,
+  },
   faq: {
     title: `Frequently Asked Questions | ${SITE_NAME}`,
     description:
