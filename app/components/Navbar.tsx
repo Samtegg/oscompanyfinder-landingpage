@@ -3,13 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
-const NAV_LINKS = [
-  { label: "Features",     href: "#features"     },
-  { label: "How It Works", href: "#how-it-works"  },
-  { label: "Pricing",      href: "#pricing"       },
-  { label: "Demo",         href: "#demo"          },
-];
+import { navLinks } from "../constants";
 
 export default function Navbar() {
   const [open, setOpen]       = useState(false);
@@ -49,16 +43,26 @@ export default function Navbar() {
 
           {/* Desktop nav links */}
           <div className="hidden md:flex items-center gap-1">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="relative px-4 py-2 text-sm font-medium text-[#1A3A5C] hover:text-[#006285] transition-colors duration-200 group"
-              >
-                {link.label}
-                <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-[#006285] scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left rounded-full" />
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.highlight ? (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="ml-1 px-3 py-1.5 text-sm font-semibold text-[#00A86B] bg-[#00C48C]/10 border border-[#00C48C]/30 rounded-full hover:bg-[#00C48C]/20 transition-colors duration-200"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="relative px-4 py-2 text-sm font-medium text-[#1A3A5C] hover:text-[#006285] transition-colors duration-200 group"
+                >
+                  {link.label}
+                  <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-[#006285] scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left rounded-full" />
+                </a>
+              )
+            )}
           </div>
 
           {/* Desktop CTAs */}
@@ -113,16 +117,27 @@ export default function Navbar() {
         }`}
       >
         <div className="bg-white border-t border-[#E5E7EB] px-4 pt-3 pb-5 space-y-1">
-          {NAV_LINKS.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              onClick={close}
-              className="flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium text-[#1A3A5C] hover:text-[#006285] hover:bg-[#F8FAFC] transition-colors duration-150"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            link.highlight ? (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={close}
+                className="flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-semibold text-[#00A86B] bg-[#00C48C]/8 border border-[#00C48C]/20 transition-colors duration-150"
+              >
+                {link.label}
+              </a>
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={close}
+                className="flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium text-[#1A3A5C] hover:text-[#006285] hover:bg-[#F8FAFC] transition-colors duration-150"
+              >
+                {link.label}
+              </a>
+            )
+          )}
 
           <div className="pt-3 border-t border-[#E5E7EB] mt-2 flex flex-col gap-2.5">
             <a

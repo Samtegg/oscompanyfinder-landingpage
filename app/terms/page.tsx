@@ -1,12 +1,9 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { constructMetadata } from "../constants/seoContants";
 
-export const metadata: Metadata = {
-  title: "Terms of Service — OsCompanyFinder Technologies",
-  description: "Read the Terms of Service for OsCompanyFinder Technologies. Understand your rights, responsibilities, and the rules governing use of our B2B lead generation platform.",
-};
+export const metadata = constructMetadata("terms");
 
 const SECTIONS = [
   { id: "acceptance", label: "Acceptance of Terms" },

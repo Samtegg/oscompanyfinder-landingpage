@@ -1,12 +1,9 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { constructMetadata } from "../constants/seoContants";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy — OsCompanyFinder Technologies",
-  description: "Learn how OsCompanyFinder Technologies collects, uses, stores, and protects your information. Your privacy is important to us.",
-};
+export const metadata = constructMetadata("privacy");
 
 const SECTIONS = [
   { id: "overview", label: "Overview" },

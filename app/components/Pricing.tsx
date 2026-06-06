@@ -1,7 +1,7 @@
 const STARTER_FEATURES = [
   "Lead generation (volume by agreement)",
   "Basic dashboard",
-  "Export to Excel",
+  "Limited Export to Excel",
   "Email support",
 ];
 const GROWTH_FEATURES = [

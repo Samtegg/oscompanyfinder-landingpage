@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { constructMetadata } from "./constants/seoContants";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,12 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "OsCompanyFinder Technologies — B2B Lead Generation Platform",
-  description:
-    "Find and connect with companies that are ready to buy your services. OsCompanyFinder Technologies helps Nigerian businesses discover verified companies, extract decision-maker contacts, and automate outreach.",
-  keywords: ["B2B leads Nigeria", "lead generation Nigeria", "company finder", "sales automation Nigeria"],
-};
+export const metadata = constructMetadata("home");
 
 export default function RootLayout({
   children,
