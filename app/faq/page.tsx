@@ -71,7 +71,7 @@ const CATEGORIES = [
     items: [
       {
         q: "How does pricing work?",
-        a: "We operate on a negotiated pricing model — there are no fixed published prices. Pricing is tailored based on your industry, the volume of leads you need, the features you want, and the size of your team. Contact us to get a custom quote.",
+        a: "There are no fixed published prices. Reach out and tell us your requirements — we will assess your industry, team size, and goals, then send you a tailored invoice. No surprises, just a price built around what you actually need.",
       },
       {
         q: "Is there a free trial or demo?",

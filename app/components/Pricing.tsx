@@ -61,9 +61,9 @@ export default function Pricing() {
         <div className="max-w-5xl mx-auto mb-10 bg-[#F8FAFC] border border-[#E5E7EB] rounded-2xl px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
           <span className="text-xl">💬</span>
           <p className="text-sm text-[#1A3A5C] leading-relaxed">
-            <strong>Pricing is negotiated directly with each client.</strong> Choose the plan that
-            fits your team&apos;s needs, then book a call — we&apos;ll agree on the right number
-            together, based on your industry, team size, and goals.
+            <strong>Pricing built around your needs. </strong> Choose the plan that fits
+            your team, reach out, and we&apos;ll assess your requirements and send you
+            an invoice based on your industry, team size, and goals.
           </p>
         </div>
 
@@ -154,14 +154,14 @@ export default function Pricing() {
 
               <div className="mb-1">
                 <span className="text-xs font-semibold text-white/40 uppercase tracking-wider">
-                  Negotiated directly
+                  Custom invoice
                 </span>
               </div>
               <div className="flex items-end gap-1 mb-2">
                 <span className="text-3xl font-bold text-white">Let&apos;s Talk</span>
               </div>
               <p className="text-[#00C48C] text-sm font-medium mb-6">
-                Setup + annual agreement tailored to you
+                We assess your needs and send a tailored invoice
               </p>
 
               <ul className="space-y-3 mb-8">

@@ -24,7 +24,7 @@ export default function LandingPage() {
       <Pricing />
       <LeadMagnet />
       <ContactForm />
-      <FinalCTA />
+      {/* <FinalCTA /> */}
       <Footer />
     </main>
   );

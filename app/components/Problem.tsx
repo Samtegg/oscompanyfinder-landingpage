@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   IconFolderOff,
   IconClock,
@@ -46,19 +47,39 @@ export default function Problem() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Header */}
-        <div className="max-w-3xl mx-auto text-center mb-12">
-          <span className="text-[#EF4444] font-semibold text-xs uppercase tracking-widest">
-            The Problem
-          </span>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-[#0A1628] leading-snug">
-            Sales teams in Nigeria spend more time{" "}
-            <span className="text-[#EF4444]">searching for leads</span>{" "}
-            than closing them
-          </h2>
-          <p className="mt-4 text-[#888888] text-base leading-relaxed">
-            Sound familiar? You&apos;re not alone — most B2B sales teams in Nigeria are still running a 2005 pipeline in 2025.
-          </p>
+        {/* Header — 2-col on desktop */}
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-12">
+          {/* Left: copy */}
+          <div>
+            <span className="text-[#EF4444] font-semibold text-xs uppercase tracking-widest">
+              The Problem
+            </span>
+            <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-[#0A1628] leading-snug">
+              Sales teams in Nigeria spend more time{" "}
+              <span className="text-[#EF4444]">searching for leads</span>{" "}
+              than closing them
+            </h2>
+            <p className="mt-4 text-[#888888] text-base leading-relaxed">
+              Sound familiar? You&apos;re not alone — most B2B sales teams in Nigeria are still running a 2005 pipeline in 2025.
+            </p>
+          </div>
+
+          {/* Right: photo */}
+          <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3] lg:aspect-auto lg:h-72">
+            <Image
+              src="https://images.pexels.com/photos/5717780/pexels-photo-5717780.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Sales professional frustrated by manual lead prospecting"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              unoptimized
+            />
+            {/* Overlay badge */}
+            <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm rounded-xl px-4 py-2.5 shadow-md">
+              <p className="text-[#EF4444] font-bold text-sm leading-none">15+ hrs/week</p>
+              <p className="text-[#888888] text-xs mt-0.5">wasted on manual prospecting</p>
+            </div>
+          </div>
         </div>
 
         {/* Stat callout */}
