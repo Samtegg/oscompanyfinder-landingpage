@@ -18,7 +18,7 @@ export const navLinks: NavLinkProps[] = [
   { label: "How It Works",    href: "/#how-it-works" },
   { label: "Pricing",         href: "/pricing"       },
   { label: "FAQ",             href: "/faq"           },
-  { label: "Free Data Sample", href: "/#free-sample", highlight: true },
+  { label: "Free Trial", href: "/#free-trial", highlight: true },
 ];
 
 // ── Footer columns ────────────────────────────────────────────────────────────

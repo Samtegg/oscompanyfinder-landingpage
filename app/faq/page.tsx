@@ -20,7 +20,7 @@ const CATEGORIES = [
       },
       {
         q: "How many companies are in the database?",
-        a: "We currently aggregate data on tens of thousands of verified Nigerian businesses, with new records added regularly. The exact count varies by industry and location — you can request a free sample list to see the volume available for your specific target market.",
+        a: "We currently aggregate data on tens of thousands of verified Nigerian businesses, with new records added regularly. The exact count varies by industry and location — you can sign up for a free trial to explore the platform and see exactly what is available for your specific target market.",
       },
       {
         q: "Is the data limited to Nigeria?",
@@ -75,7 +75,7 @@ const CATEGORIES = [
       },
       {
         q: "Is there a free trial or demo?",
-        a: "Yes. We offer a free demo where we walk you through the platform live, and a free data sample so you can see the quality of our contacts for your specific industry before committing. No credit card required.",
+        a: "Yes. We offer a free trial that gives you full access to the platform — search companies, send outreach emails, and export leads — so you can experience it for your specific industry before committing. We also offer a live demo where we walk you through everything. No credit card required.",
       },
       {
         q: "How long does onboarding and setup take?",
@@ -83,7 +83,7 @@ const CATEGORIES = [
       },
       {
         q: "Do you offer a refund if I'm not satisfied?",
-        a: "We stand behind the quality of our platform and offer a free demo and sample list specifically to help you evaluate before committing. Once a subscription is active, refund eligibility is assessed on a case-by-case basis. Contact our team and we will work to make it right.",
+        a: "We stand behind the quality of our platform and offer a free trial specifically so you can evaluate it before committing. Once a paid subscription is active, refund eligibility is assessed on a case-by-case basis. Contact our team and we will work to make it right.",
       },
     ],
   },
