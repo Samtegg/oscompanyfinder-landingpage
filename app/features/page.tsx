@@ -16,14 +16,14 @@ export default function FeaturesPage() {
       <main className="bg-white pt-16">
 
         {/* Hero */}
-        <div className="bg-[#0A1628] py-14">
+        <div className="bg-gradient-to-r from-[#006285] to-[#0099CC] py-14">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-[#00C48C] text-xs font-bold uppercase tracking-widest mb-3">Platform Features</p>
             <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Everything you need to generate leads in Nigeria
             </h1>
             <p className="text-white/55 text-base max-w-2xl leading-relaxed mb-6">
-              From company discovery to outreach automation — OsCompanyFinder gives your
+              From company discovery to outreach automation — OsCFinder gives your
               sales team one platform to find, contact, and convert Nigerian businesses.
             </p>
             <div className="flex flex-wrap gap-3">

@@ -1,4 +1,5 @@
 // ── Company identity ──────────────────────────────────────────────────────────
+export const BRAND_NAME      = "OsCFinder";
 export const COMPANY_NAME    = "OsCompanyFinder Technologies";
 export const COMPANY_EMAIL   = "oscompanyfinder@gmail.com";
 export const COMPANY_PHONE   = "+2348139304329";
@@ -14,11 +15,12 @@ export interface NavLinkProps {
 }
 
 export const navLinks: NavLinkProps[] = [
-  { label: "Features",        href: "/features"      },
-  { label: "How It Works",    href: "/#how-it-works" },
-  { label: "Pricing",         href: "/pricing"       },
-  { label: "FAQ",             href: "/faq"           },
-  { label: "Free Trial", href: "/#free-trial", highlight: true },
+  { label: "Features",    href: "/features"       },
+  { label: "How It Works", href: "/#how-it-works" },
+  { label: "Demo",        href: "/#demo"          },
+  { label: "Pricing",     href: "/pricing"        },
+  { label: "FAQ",         href: "/faq"            },
+  { label: "Free Trial",  href: "/#contact-form", highlight: true },
 ];
 
 // ── Footer columns ────────────────────────────────────────────────────────────

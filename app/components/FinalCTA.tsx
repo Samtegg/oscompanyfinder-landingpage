@@ -1,12 +1,12 @@
 export default function FinalCTA() {
   return (
-    <section id="contact" className="py-24 bg-[#0A1628]">
+    <section id="contact" className="py-24 bg-gradient-to-br from-[#006285] via-[#0099CC] to-[#00A86B]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white max-w-3xl mx-auto">
           Ready to grow your business with automated lead generation?
         </h2>
         <p className="mt-6 text-white/60 text-lg max-w-2xl mx-auto">
-          Join forward-thinking Nigerian companies already using OsCompanyFinder Technologies.
+          Join forward-thinking Nigerian companies already using <span className="text-[#00C48C]">OsC</span>Finder.
           Setup takes just 48 hours.
         </p>
 

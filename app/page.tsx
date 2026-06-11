@@ -6,10 +6,10 @@ import Features from "./components/Features";
 import HowItWorks from "./components/HowItWorks";
 import Testimonials from "./components/Testimonials";
 import Pricing from "./components/Pricing";
-import LeadMagnet from "./components/LeadMagnet";
 import ContactForm from "./components/ContactForm";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
+import DemoVideo from "./components/DemoVideo";
 
 export default function LandingPage() {
   return (
@@ -22,10 +22,11 @@ export default function LandingPage() {
       <HowItWorks />
       <Testimonials />
       <Pricing />
-      <LeadMagnet />
       <ContactForm />
       {/* <FinalCTA /> */}
+      <DemoVideo />
       <Footer />
+    
     </main>
   );
 }

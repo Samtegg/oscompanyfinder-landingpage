@@ -53,7 +53,7 @@ export default function TermsPage() {
       <main className="bg-white pt-16">
 
         {/* Hero */}
-        <div className="bg-[#0A1628] py-14">
+        <div className="bg-gradient-to-r from-[#006285] to-[#0099CC] py-14">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-[#00C48C] text-xs font-bold uppercase tracking-widest mb-3">Legal</p>
             <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">Terms of Service</h1>

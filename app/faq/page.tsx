@@ -11,8 +11,8 @@ const CATEGORIES = [
     label: "About the Platform",
     items: [
       {
-        q: "What is OsCompanyFinder Technologies?",
-        a: "OsCompanyFinder Technologies is a B2B intelligence and lead generation platform built for Nigerian sales teams. It lets you search for companies by industry and location, get verified contact details (emails and phone numbers), send bulk outreach emails, and track your campaigns — all from one dashboard.",
+        q: "What is OsCFinder?",
+        a: "OsCFinder (OsCompanyFinder Technologies) is a B2B intelligence and lead generation platform built for Nigerian sales teams. It lets you search for companies by industry and location, get verified contact details (emails and phone numbers), send bulk outreach emails, and track your campaigns — all from one dashboard.",
       },
       {
         q: "What industries and locations does the platform cover?",
@@ -99,7 +99,7 @@ const CATEGORIES = [
         a: "No. The platform is designed exclusively for B2B lead generation. It aggregates business contact information — company emails, business phone numbers, and company profiles — not private personal data of individuals.",
       },
       {
-        q: "How does OsCompanyFinder handle my account data?",
+        q: "How does OsCFinder handle my account data?",
         a: "We take your data privacy seriously and operate in compliance with the NDPA 2023. We do not sell your account data to third parties. See our Privacy Policy for full details on how we collect, store, and protect your information.",
       },
     ],
@@ -143,14 +143,14 @@ export default function FAQPage() {
       <main className="bg-white pt-16">
 
         {/* Hero */}
-        <div className="bg-[#0A1628] py-14">
+        <div className="bg-gradient-to-r from-[#006285] to-[#0099CC] py-14">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-[#00C48C] text-xs font-bold uppercase tracking-widest mb-3">Support</p>
             <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">
               Frequently Asked Questions
             </h1>
             <p className="text-white/50 text-sm max-w-xl">
-              Everything you need to know about OsCompanyFinder Technologies.
+              Everything you need to know about OsCFinder.
               Can&apos;t find your answer?{" "}
               <Link href="/#contact-form" className="text-[#00C48C] hover:underline">
                 Talk to us directly.

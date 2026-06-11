@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   IconFolderOff,
   IconClock,
@@ -6,131 +5,160 @@ import {
   IconLayoutOff,
   IconCircleOff,
   IconAlertTriangle,
+  IconArrowRight,
 } from "@tabler/icons-react";
+
+const STATS = [
+  { value: "15+",  label: "hours wasted", sub: "every week on manual prospecting" },
+  { value: "60%",  label: "leads lost",   sub: "never followed up due to disorganization" },
+  { value: "3×",   label: "longer cycles", sub: "without a structured outreach system" },
+];
 
 const PAIN_POINTS = [
   {
-    icon: <IconFolderOff size={20} />,
+    icon: <IconFolderOff size={18} />,
     title: "No structured company database",
-    desc: "Prospecting is scattered across Google searches, LinkedIn, and guesswork — with no single source of truth.",
+    desc: "Prospecting is scattered across Google, LinkedIn, and guesswork — no single source of truth.",
   },
   {
-    icon: <IconClock size={20} />,
+    icon: <IconClock size={18} />,
     title: "Manual prospecting eats your day",
-    desc: "Your sales team spends hours tracking down company names, contacts, and numbers that should take minutes.",
+    desc: "Your team spends hours tracking down contacts that should take minutes to find.",
   },
   {
-    icon: <IconTrendingDown size={20} />,
+    icon: <IconTrendingDown size={18} />,
     title: "Low-quality, unverified leads",
-    desc: "Wrong numbers, dead emails, and irrelevant contacts kill deal momentum before a conversation even starts.",
+    desc: "Wrong numbers and dead emails kill deal momentum before a conversation even starts.",
   },
   {
-    icon: <IconLayoutOff size={20} />,
+    icon: <IconLayoutOff size={18} />,
     title: "No centralized system",
-    desc: "Leads live in spreadsheets, WhatsApp chats, and email inboxes — making follow-up inconsistent and messy.",
+    desc: "Leads live in spreadsheets, WhatsApp, and inboxes — follow-up is inconsistent and messy.",
   },
   {
-    icon: <IconCircleOff size={20} />,
+    icon: <IconCircleOff size={18} />,
     title: "Zero automation in the pipeline",
-    desc: "Every step — discovery, enrichment, outreach, follow-up — is done manually, one contact at a time.",
+    desc: "Every step — discovery, enrichment, outreach — is done manually, one contact at a time.",
   },
-];
-
-const STATS = [
-  { value: "15+", label: "hours wasted weekly on manual prospecting" },
-  { value: "60%", label: "of leads never followed up due to disorganization" },
-  { value: "3×", label: "longer sales cycles without an outreach system" },
 ];
 
 export default function Problem() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-b from-white to-[#f0faff]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Header — 2-col on desktop */}
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-12">
-          {/* Left: copy */}
-          <div>
-            <span className="text-[#EF4444] font-semibold text-xs uppercase tracking-widest">
-              The Problem
-            </span>
-            <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-[#0A1628] leading-snug">
-              Sales teams in Nigeria spend more time{" "}
-              <span className="text-[#EF4444]">searching for leads</span>{" "}
-              than closing them
-            </h2>
-            <p className="mt-4 text-[#888888] text-base leading-relaxed">
-              Sound familiar? You&apos;re not alone — most B2B sales teams in Nigeria are still running a 2005 pipeline in 2025.
-            </p>
-          </div>
-
-          {/* Right: photo */}
-          <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3] lg:aspect-auto lg:h-72">
-            <Image
-              src="https://images.pexels.com/photos/5717780/pexels-photo-5717780.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Sales professional frustrated by manual lead prospecting"
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              unoptimized
-            />
-            {/* Overlay badge */}
-            <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm rounded-xl px-4 py-2.5 shadow-md">
-              <p className="text-[#EF4444] font-bold text-sm leading-none">15+ hrs/week</p>
-              <p className="text-[#888888] text-xs mt-0.5">wasted on manual prospecting</p>
-            </div>
-          </div>
+        {/* Header */}
+        <div className="max-w-2xl mx-auto text-center mb-14">
+          <span className="inline-flex items-center gap-1.5 bg-[#FEF2F2] border border-[#EF4444]/20 text-[#EF4444] font-semibold text-xs uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">
+            <IconAlertTriangle size={12} />
+            The Problem
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#0A1628] leading-snug">
+            Your team spends more time{" "}
+            <span className="text-[#EF4444]">searching for leads</span>{" "}
+            than closing them
+          </h2>
+          <p className="mt-4 text-[#888888] text-base leading-relaxed">
+            Most B2B sales teams in Nigeria are still running a 2005 pipeline in 2025.
+            Here's what that's actually costing you.
+          </p>
         </div>
 
-        {/* Stat callout */}
-        <div className="grid sm:grid-cols-3 gap-px bg-[#E5E7EB] rounded-2xl overflow-hidden mb-12 max-w-4xl mx-auto shadow-sm">
+        {/* Stats — 3 bold callouts */}
+        <div className="grid sm:grid-cols-3 gap-4 max-w-4xl mx-auto mb-14">
           {STATS.map((stat) => (
-            <div key={stat.value} className="bg-[#F8FAFC] px-6 py-5 text-center">
-              <p className="text-3xl font-bold text-[#0A1628] mb-1">{stat.value}</p>
-              <p className="text-[#888888] text-sm leading-snug">{stat.label}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Pain point cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto mb-6">
-          {PAIN_POINTS.map((item) => (
             <div
-              key={item.title}
-              className="bg-white border border-[#E5E7EB] rounded-xl p-5 flex gap-4 hover:border-[#EF4444]/30 hover:shadow-sm transition-all"
+              key={stat.value}
+              className="relative bg-white rounded-2xl border border-[#E5E7EB] p-6 text-center overflow-hidden shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className="w-10 h-10 rounded-lg bg-[#FEF2F2] text-[#EF4444] flex items-center justify-center flex-shrink-0 mt-0.5">
-                {item.icon}
-              </div>
-              <div>
-                <h3 className="font-semibold text-[#1A3A5C] text-sm mb-1 leading-snug">
-                  {item.title}
-                </h3>
-                <p className="text-[#888888] text-sm leading-relaxed">{item.desc}</p>
-              </div>
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#EF4444] to-[#F97316]" />
+              <p className="text-4xl sm:text-5xl font-black text-[#EF4444] leading-none mb-1">
+                {stat.value}
+              </p>
+              <p className="text-[#0A1628] font-bold text-sm mb-1">{stat.label}</p>
+              <p className="text-[#888888] text-xs leading-snug">{stat.sub}</p>
             </div>
           ))}
         </div>
 
-        {/* Competitor warning — full width */}
-        <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden border border-[#F59E0B]/30">
-          <div className="bg-[#0A1628] px-6 py-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-            <div className="w-10 h-10 rounded-lg bg-[#F59E0B]/10 text-[#F59E0B] flex items-center justify-center flex-shrink-0">
-              <IconAlertTriangle size={20} />
+        {/* Pain points — 3-col list */}
+        <div className="mb-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {PAIN_POINTS.map((item, i) => (
+              <div
+                key={item.title}
+                className="flex gap-4 bg-white border border-[#E5E7EB] rounded-xl p-5 hover:border-[#EF4444]/25 hover:shadow-sm transition-all"
+              >
+                <div className="flex-shrink-0 flex flex-col items-center gap-2">
+                  <div className="w-9 h-9 rounded-xl bg-[#FEF2F2] text-[#EF4444] flex items-center justify-center">
+                    {item.icon}
+                  </div>
+                  <span className="text-[10px] font-black text-[#EF4444]/30">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-[#1A3A5C] text-sm mb-1 leading-snug">
+                    {item.title}
+                  </h3>
+                  <p className="text-[#888888] text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+
+            {/* CTA card — fills the 5-item grid */}
+            <div className="flex items-center justify-between bg-gradient-to-br from-[#006285] to-[#0099CC] rounded-xl p-5 sm:col-span-1">
+              <div>
+                <p className="text-white font-bold text-sm leading-snug mb-1">
+                  Your competitors are already automating this
+                </p>
+                <p className="text-white/60 text-xs leading-relaxed">
+                  Companies using automation generate 5× more qualified leads every week.
+                </p>
+              </div>
             </div>
-            <div className="flex-1">
-              <p className="text-white font-bold text-sm mb-0.5">
-                Your competitors are already automating lead generation
+          </div>
+        </div>
+
+        {/* Bottom warning banner */}
+        <div className="relative rounded-2xl overflow-hidden">
+          {/* Background layers */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A1628] via-[#130d0d] to-[#1a0a0a]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_right,_#EF444415_0%,_transparent_60%)]" />
+          {/* Left accent stripe */}
+          <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#EF4444] via-[#F97316] to-[#EF4444]" />
+
+          <div className="relative px-7 py-6 flex flex-col sm:flex-row items-start sm:items-center gap-5">
+
+            {/* Icon with pulse */}
+            <div className="relative flex-shrink-0">
+              <div className="w-14 h-14 rounded-2xl bg-[#EF4444]/12 border border-[#EF4444]/25 flex items-center justify-center">
+                <IconAlertTriangle size={26} className="text-[#EF4444]" />
+              </div>
+              <span className="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#EF4444] opacity-60" />
+                <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-[#EF4444]" />
+              </span>
+            </div>
+
+            {/* Text */}
+            <div className="flex-1 min-w-0">
+              <p className="text-white font-bold text-base sm:text-lg leading-snug">
+                Every week without a system is another week of lost deals
               </p>
-              <p className="text-white/50 text-sm">
-                While you manually prospect, companies using automation are generating 5× more qualified leads every week.
+              <p className="text-white/45 text-sm mt-1 leading-relaxed">
+                While you manually prospect, competitors using automation are generating{" "}
+                <span className="text-[#F97316] font-semibold">5× more qualified leads</span> every week.
               </p>
             </div>
+
+            {/* CTA */}
             <a
               href="#features"
-              className="flex-shrink-0 bg-[#00C48C] hover:bg-[#00A86B] text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors whitespace-nowrap"
+              className="group flex-shrink-0 inline-flex items-center gap-2 bg-gradient-to-r from-[#EF4444] to-[#F97316] hover:from-[#dc2626] hover:to-[#ea580c] text-white text-sm font-bold px-6 py-3 rounded-xl transition-all duration-200 shadow-lg shadow-[#EF4444]/30 whitespace-nowrap"
             >
-              See the solution →
+              See the solution
+              <IconArrowRight size={15} className="group-hover:translate-x-0.5 transition-transform duration-200" />
             </a>
           </div>
         </div>

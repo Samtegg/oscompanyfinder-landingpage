@@ -16,7 +16,7 @@ const STEPS = [
     glow: "rgba(0,98,133,0.25)",
     icon: <IconSearch size={26} color="#fff" />,
     title: "Search by industry & location",
-    desc: "Select your target industry and city. OsCompanyFinder's intelligence engine knows exactly where verified Nigerian companies are.",
+    desc: "Select your target industry and city. OsCFinder's intelligence engine knows exactly where verified Nigerian companies are.",
     bullets: [
       "Filter by 20+ industries",
       "Narrow by state or city",
@@ -56,7 +56,7 @@ const STEPS = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-24 bg-[#0A1628] overflow-hidden">
+    <section id="how-it-works" className="py-24 overflow-hidden bg-gradient-to-br from-[#003d54] via-[#005573] to-[#1A3A5C]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
@@ -84,7 +84,7 @@ export default function HowItWorks() {
           {STEPS.map((item, i) => (
             <div
               key={item.step}
-              className="relative flex flex-col rounded-2xl border border-white/8 bg-[#111d30] p-7 hover:border-white/15 transition-all duration-300 group"
+              className="relative flex flex-col rounded-2xl border border-white/15 bg-white/8 backdrop-blur-sm p-7 hover:bg-white/12 hover:border-white/25 transition-all duration-300 group"
               style={{ boxShadow: `0 0 40px ${item.glow}` }}
             >
               {/* Top row: step number + icon */}
@@ -95,8 +95,7 @@ export default function HowItWorks() {
                 >
                   {item.icon}
                 </div>
-                <span className="text-5xl font-black leading-none select-none"
-                  style={{ color: `${item.color}22` }}>
+                <span className="text-5xl font-black leading-none select-none text-white/30">
                   {item.step}
                 </span>
               </div>
@@ -147,7 +146,7 @@ export default function HowItWorks() {
             { label: "First leads", value: "Same day" },
             { label: "Avg. time saved", value: "15 hrs/week" },
           ].map((stat) => (
-            <div key={stat.label} className="text-center py-5 px-4 rounded-xl border border-white/8 bg-white/3">
+            <div key={stat.label} className="text-center py-5 px-4 rounded-xl border border-white/15 bg-white/8">
               <p className="text-2xl font-black text-white">{stat.value}</p>
               <p className="text-white/40 text-xs mt-1 uppercase tracking-wide">{stat.label}</p>
             </div>

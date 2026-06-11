@@ -41,7 +41,7 @@ function CheckIcon({ dark }: { dark?: boolean }) {
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-20 bg-white">
+    <section id="pricing" className="py-20 bg-gradient-to-br from-white via-[#f0faff] to-[#edfaf5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
@@ -58,7 +58,7 @@ export default function Pricing() {
         </div>
 
         {/* Callout banner */}
-        <div className="max-w-5xl mx-auto mb-10 bg-[#F8FAFC] border border-[#E5E7EB] rounded-2xl px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+        <div className="max-w-5xl mx-auto mb-10 bg-gradient-to-r from-[#f0faff] to-[#edfaf5] border border-[#006285]/15 rounded-2xl px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
           <span className="text-xl">💬</span>
           <p className="text-sm text-[#1A3A5C] leading-relaxed">
             <strong>Pricing built around your needs. </strong> Choose the plan that fits
@@ -141,7 +141,7 @@ export default function Pricing() {
           </div>
 
           {/* Enterprise */}
-          <div className="relative bg-[#0A1628] border-2 border-[#00C48C] rounded-2xl p-8 shadow-xl flex flex-col">
+          <div className="relative bg-gradient-to-br from-[#006285] to-[#004a66] border-2 border-[#00C48C] rounded-2xl p-8 shadow-xl flex flex-col">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
               <span className="bg-[#00C48C] text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wide">
                 Most Popular

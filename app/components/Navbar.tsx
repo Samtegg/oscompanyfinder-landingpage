@@ -32,11 +32,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center flex-shrink-0" onClick={close}>
             <Image
-              src="/images/oscompanyfinder.png"
-              alt="OsCompanyFinder Technologies"
-              width={260}
-              height={64}
-              className="h-14 w-auto"
+              src="/images/osc.png"
+              alt="OsCFinder Technologies"
+              width={200}
+              height={52}
+              className="h-16 w-auto"
               priority
             />
           </Link>
@@ -68,10 +68,10 @@ export default function Navbar() {
           {/* Desktop CTAs */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="#contact-form"
+              href="/#demo"
               className="text-sm font-semibold text-[#006285] border-2 border-[#006285] px-5 py-2 rounded-xl hover:bg-[#006285] hover:text-white transition-all duration-200"
             >
-              Get Demo
+              Watch Demo
             </a>
             <a
               href="#pricing"
@@ -141,11 +141,11 @@ export default function Navbar() {
 
           <div className="pt-3 border-t border-[#E5E7EB] mt-2 flex flex-col gap-2.5">
             <a
-              href="#contact-form"
+              href="/#demo"
               onClick={close}
               className="block text-center text-sm font-semibold text-[#006285] border-2 border-[#006285] px-4 py-2.5 rounded-xl hover:bg-[#006285] hover:text-white transition-all duration-200"
             >
-              Get Demo
+              Watch Demo
             </a>
             <a
               href="#pricing"

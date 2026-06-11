@@ -119,7 +119,7 @@ export default function Testimonials() {
   const others       = TESTIMONIALS.filter((t) => !t.featured);
 
   return (
-    <section id="testimonials" className="py-24 bg-white">
+    <section id="testimonials" className="py-24 bg-gradient-to-b from-[#f0faff] via-white to-[#edfaf5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
@@ -128,7 +128,7 @@ export default function Testimonials() {
             Client Stories
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#0A1628] leading-tight">
-            Nigerian businesses are already winning with OsCompanyFinder
+            Nigerian businesses are already winning with <span className="text-[#00C48C]">OsC</span>Finder
           </h2>
           <p className="mt-4 text-[#888888] text-base leading-relaxed">
             From insurance to logistics to real estate — see how sales teams across Nigeria are closing more deals.
@@ -136,7 +136,7 @@ export default function Testimonials() {
         </div>
 
         {/* Featured testimonial */}
-        <div className="mb-8 rounded-2xl bg-[#0A1628] p-8 sm:p-10 relative overflow-hidden">
+        <div className="mb-8 rounded-2xl bg-gradient-to-br from-[#006285] via-[#0077a0] to-[#1A3A5C] p-8 sm:p-10 relative overflow-hidden">
           <div
             className="absolute top-0 right-0 w-64 h-64 rounded-full blur-3xl opacity-10"
             style={{ background: "radial-gradient(circle, #00C48C, transparent)" }}
@@ -176,7 +176,7 @@ export default function Testimonials() {
           {others.map((t) => (
             <div
               key={t.name}
-              className="rounded-2xl border border-[#E5E7EB] bg-[#F8FAFC] p-6 hover:border-[#006285]/30 hover:shadow-md transition-all duration-300 flex flex-col"
+              className="rounded-2xl border border-[#E5E7EB] bg-gradient-to-br from-white to-[#f0faff] p-6 hover:border-[#006285]/30 hover:shadow-md hover:to-[#e6f5fb] transition-all duration-300 flex flex-col"
             >
               <div className="flex items-start justify-between mb-5">
                 <Avatar
@@ -209,7 +209,7 @@ export default function Testimonials() {
         </div>
 
         {/* Bottom trust bar */}
-        <div className="mt-14 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 py-7 px-8 rounded-2xl bg-[#F8FAFC] border border-[#E5E7EB]">
+        <div className="mt-14 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 py-7 px-8 rounded-2xl bg-gradient-to-r from-[#f0faff] to-[#edfaf5] border border-[#006285]/10">
           {[
             { value: "50+",   label: "Companies served"    },
             { value: "4.9/5", label: "Average rating"      },

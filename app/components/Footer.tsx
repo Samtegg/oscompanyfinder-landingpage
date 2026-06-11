@@ -3,16 +3,16 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#060E1A] border-t border-white/5 py-12">
+    <footer className="bg-gradient-to-br from-[#0A1628] via-[#063548] to-[#004a66] border-t border-white/5 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-start gap-8">
           <div className="max-w-xs">
             <Image
-              src="/images/oscompanyfinder.png"
-              alt="OsCompanyFinder Technologies"
-              width={220}
-              height={54}
-              className="h-14 w-auto brightness-0 invert"
+              src="/images/osc.png"
+              alt="OsCFinder Technologies"
+              width={180}
+              height={46}
+              className="h-12 w-auto brightness-0 invert"
             />
             <p className="mt-3 text-white/40 text-sm leading-relaxed">
               Nigeria&apos;s B2B intelligence and lead generation platform. Helping companies find,
@@ -58,7 +58,7 @@ export default function Footer() {
 
         <div className="mt-10 pt-6 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-white/30 text-xs">
-            © {new Date().getFullYear()} OsCompanyFinder Technologies. All rights reserved.
+            © {new Date().getFullYear()} OsCFinder · OsCompanyFinder Technologies. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link href="/terms" className="text-white/30 hover:text-white/50 text-xs transition-colors">Terms of Service</Link>

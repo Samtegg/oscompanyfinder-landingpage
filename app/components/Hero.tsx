@@ -20,7 +20,7 @@ const STATS = [
 
 export default function Hero() {
   return (
-    <section className="pt-20 pb-0 bg-[#F8FAFC]">
+    <section className="pt-20 pb-0 bg-gradient-to-br from-[#f0faff] via-white to-[#edfaf5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
@@ -42,7 +42,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-[#888888] text-base leading-[1.75] mb-8 max-w-[420px]">
-              OsCompanyFinder gives you verified sales lead (company data), decision-maker contacts, and
+              <span className="text-[#00C48C]">OsC</span>Finder gives you verified sales leads, decision-maker contacts, and
               automated outreach — all in one platform built for Africa.
             </p>
 
@@ -138,7 +138,7 @@ export default function Hero() {
                 <p className="text-white/65 text-[11px] mb-1">Leads this month</p>
                 <p className="text-[#00C48C] text-xl font-bold leading-none">1,284</p>
               </div>
-              <div className="bg-[#0A1628] rounded-lg px-3.5 py-3">
+              <div className="bg-gradient-to-br from-[#006285] to-[#004a66] rounded-lg px-3.5 py-3">
                 <p className="text-white/65 text-[11px] mb-1">Emails sent</p>
                 <p className="text-[#00C48C] text-xl font-bold leading-none">3,941</p>
               </div>

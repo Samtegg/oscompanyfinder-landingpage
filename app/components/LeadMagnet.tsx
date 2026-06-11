@@ -42,7 +42,7 @@ export default function LeadMagnet() {
   const [loading, setLoading]   = useState(false);
   const [done, setDone]         = useState(false);
 
-  function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: React.SyntheticEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       setError("Enter a valid business email address");
@@ -74,7 +74,7 @@ export default function LeadMagnet() {
                 Try the platform free before you commit
               </h2>
               <p className="mt-4 text-[#888888] text-base leading-relaxed">
-                Get full access to OsCompanyFinder Technologies and see exactly
+                Get full access to <span className="text-[#00C48C]">OsC</span>Finder and see exactly
                 how it works for your industry — at zero cost and zero risk.
               </p>
 

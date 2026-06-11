@@ -4,11 +4,12 @@ import { useState } from "react";
 import { IconMail, IconPhone, IconBuilding, IconUser, IconMessageDots, IconCircleCheck, IconSend } from "@tabler/icons-react";
 
 const INTERESTS = [
+  "Start a Free Trial",
   "Get a Demo",
   "Book a Strategy Call",
-  "Starter Plan — ₦500,000/yr",
-  "Growth Plan — ₦1,000,000/yr",
-  "Enterprise Plan — ₦1,500,000 setup",
+  "Starter Plan",
+  "Growth Plan",
+  "Enterprise Plan",
   "General Inquiry",
 ];
 
@@ -45,7 +46,7 @@ export default function ContactForm() {
     return next;
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: React.SyntheticEvent<HTMLFormElement>) {
     e.preventDefault();
     const errs = validate();
     if (Object.keys(errs).length) { setErrors(errs); return; }
@@ -56,7 +57,7 @@ export default function ContactForm() {
 
   if (submitted) {
     return (
-      <section id="contact-form" className="py-20 bg-[#F8FAFC]">
+      <section id="contact-form" className="py-20 bg-gradient-to-br from-[#edfaf5] via-[#f0faff] to-white">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <div className="bg-white border border-[#E5E7EB] rounded-2xl p-12 shadow-sm">
             <div className="w-16 h-16 bg-[#e6f7f1] rounded-full flex items-center justify-center mx-auto mb-5">
@@ -81,7 +82,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact-form" className="py-20 bg-[#F8FAFC]">
+    <section id="contact-form" className="py-20 bg-gradient-to-br from-[#edfaf5] via-[#f0faff] to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-5 gap-12 items-start">
 
@@ -124,7 +125,7 @@ export default function ContactForm() {
               ))}
             </div>
 
-            <div className="mt-10 p-5 bg-[#0A1628] rounded-xl">
+            <div className="mt-10 p-5 bg-gradient-to-br from-[#006285] to-[#004a66] rounded-xl">
               <p className="text-white/60 text-xs uppercase tracking-widest mb-3">Direct contact</p>
               <a
                 href="mailto:oscompanyfinder@gmail.com"

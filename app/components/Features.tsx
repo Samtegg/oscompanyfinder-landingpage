@@ -1,121 +1,200 @@
+import Link from "next/link";
+import {
+  IconSearch,
+  IconPhoneCall,
+  IconFilter,
+  IconBolt,
+  IconFileExport,
+  IconChartBar,
+  IconMailFast,
+  IconFileText,
+  IconArrowRight,
+  IconCircleCheck,
+  IconSparkles,
+  IconPlayerPlay,
+} from "@tabler/icons-react";
+
 const FEATURES = [
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-      </svg>
-    ),
+    icon: <IconSearch size={20} />,
     title: "Company Discovery Engine",
     desc: "Search and discover real companies by industry and location across Nigeria instantly.",
+    outcome: "100+ leads per search",
+    gradient: "from-[#006285] to-[#0099CC]",
+    num: "01",
   },
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-      </svg>
-    ),
+    icon: <IconPhoneCall size={20} />,
     title: "Email + Phone Extraction",
     desc: "Automatically extract verified emails and phone numbers from decision-makers.",
+    outcome: "Verified contacts only",
+    gradient: "from-[#00A86B] to-[#00C48C]",
+    num: "02",
   },
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707L13 13.414V19a1 1 0 01-.553.894l-4 2A1 1 0 017 21v-7.586L3.293 6.707A1 1 0 013 6V4z" />
-      </svg>
-    ),
+    icon: <IconFilter size={20} />,
     title: "Lead Filtering System",
     desc: "Filter leads by location, industry, company size, and contact status.",
+    outcome: "Zero wasted outreach",
+    gradient: "from-[#6366f1] to-[#8B5CF6]",
+    num: "03",
   },
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-      </svg>
-    ),
+    icon: <IconBolt size={20} />,
     title: "Outreach Automation",
     desc: "Send personalized email campaigns to verified leads directly from the platform.",
+    outcome: "5× faster pipeline",
+    gradient: "from-[#F97316] to-[#EF4444]",
+    num: "04",
   },
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-      </svg>
-    ),
+    icon: <IconFileExport size={20} />,
     title: "Export to Excel",
     desc: "Download your entire lead list as Excel files ready for your CRM or team.",
+    outcome: "CRM-ready in seconds",
+    gradient: "from-[#006285] to-[#004a66]",
+    num: "05",
   },
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-      </svg>
-    ),
+    icon: <IconChartBar size={20} />,
     title: "Usage Tracking Dashboard",
     desc: "Monitor leads generated, emails sent, and conversion rates in real time.",
+    outcome: "Live performance data",
+    gradient: "from-[#0099CC] to-[#006285]",
+    num: "06",
   },
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 13h6M9 16h4" />
-      </svg>
-    ),
+    icon: <IconMailFast size={20} />,
     title: "Bulk Email Sending",
-    desc: "Send hundreds of personalised outreach emails to verified leads in one click — no manual effort required.",
+    desc: "Send hundreds of personalized outreach emails to verified leads in one click.",
+    outcome: "1-click mass outreach",
+    gradient: "from-[#00A86B] to-[#006285]",
+    num: "07",
   },
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-      </svg>
-    ),
+    icon: <IconFileText size={20} />,
     title: "Saved Email Templates",
-    desc: "Build and save reusable outreach templates for different industries, so your team never writes the same email twice.",
+    desc: "Build and save reusable outreach templates for different industries.",
+    outcome: "Write once, use forever",
+    gradient: "from-[#8B5CF6] to-[#F97316]",
+    num: "08",
   },
 ];
 
-import Link from "next/link";
+const STRIP_STATS = [
+  { n: "8",  label: "Core features" },
+  { n: "1",  label: "Platform"      },
+  { n: "∞",  label: "Leads found"   },
+];
 
 export default function Features({ preview = false }: { preview?: boolean }) {
   const items = preview ? FEATURES.slice(0, 4) : FEATURES;
 
   return (
-    <section id="features" className="py-20 bg-gradient-to-b from-[#F8FAFC] to-white">
+    <section id="features" className="py-24 bg-gradient-to-b from-[#f0faff] via-white to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center mb-14">
-          <span className="text-[#00A86B] font-semibold text-sm uppercase tracking-widest">
+
+        {/* Header */}
+        <div className="max-w-2xl mx-auto text-center mb-16">
+          <span className="inline-flex items-center gap-1.5 bg-[#edfaf5] border border-[#00C48C]/25 text-[#00A86B] font-semibold text-xs uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">
+            <IconSparkles size={12} />
             The Solution
           </span>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-[#0A1628]">
-            A complete system for finding, enriching, and contacting companies
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#0A1628] leading-snug">
+            A complete system for{" "}
+            <span className="text-[#006285]">finding, enriching,</span>{" "}
+            and contacting companies
           </h2>
+          <p className="mt-4 text-[#888888] text-base leading-relaxed">
+            Everything your sales team needs to go from cold research to warm conversation —
+            in one platform built for the Nigerian market.
+          </p>
+
+          {/* Stats strip */}
+          <div className="mt-8 inline-flex items-center gap-5 bg-white border border-[#E5E7EB] rounded-full px-6 py-2.5 shadow-sm">
+            {STRIP_STATS.map((item, i) => (
+              <div key={item.label} className="flex items-center gap-5">
+                {i > 0 && <span className="w-px h-4 bg-[#E5E7EB]" />}
+                <div className="flex items-center gap-2">
+                  <span className="font-black text-[#006285] text-base leading-none">{item.n}</span>
+                  <span className="text-[#888888] text-xs">{item.label}</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Cards grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {items.map((feature) => (
             <div
               key={feature.title}
-              className="bg-white border border-[#E5E7EB] rounded-xl p-6 hover:shadow-md hover:border-[#006285]/30 transition-all group"
+              className="group relative bg-white border border-[#E5E7EB] rounded-2xl p-6 hover:border-[#006285]/25 hover:shadow-lg hover:shadow-[#006285]/5 transition-all duration-300 overflow-hidden"
             >
-              <div className="w-12 h-12 bg-[#006285]/10 text-[#006285] rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#006285] group-hover:text-white transition-colors">
-                {feature.icon}
+              {/* Subtle hover gradient wash */}
+              <div
+                className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-[0.03] transition-opacity duration-300 pointer-events-none`}
+              />
+
+              {/* Icon + number */}
+              <div className="flex items-start justify-between mb-5">
+                <div
+                  className={`w-11 h-11 rounded-xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center text-white shadow-sm`}
+                >
+                  {feature.icon}
+                </div>
+                <span className="text-[11px] font-black text-[#E5E7EB] tracking-widest select-none">
+                  {feature.num}
+                </span>
               </div>
-              <h3 className="font-semibold text-[#1A3A5C] mb-2">{feature.title}</h3>
-              <p className="text-[#888888] text-sm leading-relaxed">{feature.desc}</p>
+
+              <h3 className="font-bold text-[#0A1628] text-[15px] leading-snug mb-2">
+                {feature.title}
+              </h3>
+              <p className="text-[#888888] text-sm leading-relaxed mb-5">
+                {feature.desc}
+              </p>
+
+              {/* Outcome tag */}
+              <div className="flex items-center gap-1.5 pt-4 border-t border-[#F1F5F9]">
+                <IconCircleCheck size={13} className="text-[#00A86B] flex-shrink-0" />
+                <span className="text-xs font-semibold text-[#00A86B]">{feature.outcome}</span>
+              </div>
             </div>
           ))}
         </div>
 
+        {/* Preview CTA banner */}
         {preview && (
-          <div className="mt-10 text-center">
+          <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <Link
               href="/features"
-              className="inline-flex items-center gap-2 border-2 border-[#006285] text-[#006285] font-semibold px-6 py-3 rounded-xl hover:bg-[#006285] hover:text-white transition-all text-sm"
+              className="group flex items-center justify-between flex-1 bg-gradient-to-r from-[#f0faff] to-[#edfaf5] border border-[#006285]/15 rounded-2xl px-7 py-5 hover:border-[#006285]/30 hover:shadow-md transition-all duration-200"
             >
-              See all {FEATURES.length} features →
+              <div>
+                <p className="font-bold text-[#0A1628] text-sm">
+                  Explore all {FEATURES.length} features
+                </p>
+                <p className="text-[#888888] text-xs mt-0.5">
+                  Export tools, bulk email, analytics dashboard, and more
+                </p>
+              </div>
+              <span className="flex items-center gap-2 text-sm font-semibold text-[#006285] group-hover:gap-3 transition-all duration-200">
+                See all features
+                <IconArrowRight size={16} />
+              </span>
             </Link>
+
+            <a
+              href="#demo"
+              className="group flex items-center justify-center gap-2.5 bg-[#006285] hover:bg-[#004a66] text-white font-bold text-sm px-7 py-5 rounded-2xl transition-colors duration-200 whitespace-nowrap"
+            >
+              <IconPlayerPlay size={16} />
+              Watch demo
+            </a>
           </div>
         )}
+
       </div>
     </section>
   );
